@@ -22,7 +22,7 @@ If that's successful, the UI should be available at [localhost:5000](http://loca
 
 ## Your Task
 
-Your job is to complete the backend code provided (see `server.py`) so that:
+Your job is to complete the backend code provided (see ~~`server.py`~~ 'app.py') so that:
 
 * Complete the `get_terms_from_tweet` function so that it's smarter about parsing tweets into terms.
 * Make the `GET /tweets` endpoint exclude results that contain 1+ of the terms to avoid.
