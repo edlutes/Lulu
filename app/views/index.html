@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Something Like Twitter</title>
+    <link id="favicon" rel="icon" href="https://gomix.com/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/public/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Tweets You'll Like
+      </h1>
+      <p>
+        Where tweets don't contain the terms (click to delete):
+        <ul id="terms"></ul>
+      </p>
+    </header>
+
+    <main>
+      <div>
+        <form id="new_term">
+          <input type="text" maxlength="100" placeholder="Block a new term">
+          <button type="submit">Block</button>
+        </form>
+      </div>
+
+      <div>
+        <form id="new_tweet">
+          <input type="text" maxlength="100" placeholder="Your new tweet">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <p>The following <span id="tweet_count"></span> tweets are just how you like them:</p>
+      <section class="tweets">
+        <ul id="tweets">
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <a href="https://glitch.com">
+        Remix this in Glitch
+      </a>
+    </footer>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/public/client.js"></script>
+
+  </body>
+</html>
